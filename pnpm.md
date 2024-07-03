@@ -1,52 +1,11 @@
 ---
-title: Ansi codes
-category: CLI
-intro: | Quick reference to ANSI color codes.
+title: webpack
+category: JavaScript libraries
+updated: 2017-09-26
+intro: |
+  This is a very basic "getting started with Webpack" guide for use with [Webpack](https://webpack.js.org) v3. This doesn't cover all features, but it should get you started in understanding the config file format.
 ---
 
-### Format
+### Basic config
 
-hello
-
-```
-\033[#m
-```
-
-### ANSI codes
-
-```
-0      clear
-1      bold
-4      underline
-5      blink
-
-30-37  fg color
-40-47  bg color
-
-1K     clear line (to beginning of line)
-2K     clear line (entire line)
-2J     clear screen
-0;0H   move cursor to 0;0
-
-1A     move up 1 line
-```
-
-### Colors
-
-```
-0      black
-1      red
-2      green
-3      yellow
-4      blue
-5      magenta
-6      cyan
-7      white
-```
-
-### Bash utilities
-
-```sh
-hide_cursor() { printf "\e[?25l"; }
-show_cursor() { printf "\e[?25h"; }
-```
+#### webpack.config.js
